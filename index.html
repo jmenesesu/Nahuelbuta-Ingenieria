@@ -597,8 +597,7 @@
       <p id="successMsg">Se abrió tu correo con la solicitud preparada. Si no se abrió, copia el resumen y envíalo a nuestro correo de contacto.</p>
       <div class="resumen" id="resumenTxt"></div>
       <div class="acts">
-        <button class="btn btn-primary" id="reabrirMail">Abrir correo nuevamente</button>
-        <button class="btn btn-ghost" id="copiarBtn">Copiar resumen</button>
+        <button class="btn btn-primary" id="copiarBtn">Copiar resumen</button>
       </div>
     </div>
   </div>
@@ -751,7 +750,6 @@ form.addEventListener('submit', async (ev) => {
   window.location.href = ultimoMailto;
 });
 
-document.getElementById('reabrirMail').addEventListener('click', () => { if (ultimoMailto) window.location.href = ultimoMailto; });
 
 /* ---------- Menú móvil ---------- */
 (function(){
